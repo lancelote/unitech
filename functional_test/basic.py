@@ -1,5 +1,9 @@
 # coding=utf-8
 
+"""
+Basic functional tests
+"""
+
 from selenium import webdriver
 import unittest
 
