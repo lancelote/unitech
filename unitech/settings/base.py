@@ -20,11 +20,14 @@ from django.core.exceptions import ImproperlyConfigured
 def get_env_variable(var_name):
     """Get environment variable value
 
-    :param var_name: Environment variable name
-    :type var_name: str
-    :raise: ImproperlyConfigured
-    :return: Environment variable value
-    :rtype: str
+    Args:
+        var_name (str): Environment variable name
+
+    Raises:
+        ImproperlyConfigured: If variable can not be found
+
+    Returns:
+        str: Environment variable value
     """
     try:
         return os.environ[var_name]
