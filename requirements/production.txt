@@ -1,1 +1,3 @@
 -r base.txt
+
+whitenoise  # static files serving tool
